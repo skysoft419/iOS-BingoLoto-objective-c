@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42EDA48A3A1632CB7EB5A775 /* libPods-BingoLoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F481D60D0EF838D30DB87C /* libPods-BingoLoto.a */; };
+		99060FB722C27F5D006F6EA6 /* Continue.png in Resources */ = {isa = PBXBuildFile; fileRef = 99060FB422C27F5C006F6EA6 /* Continue.png */; };
+		99060FB822C27F5D006F6EA6 /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 99060FB522C27F5C006F6EA6 /* Exit.png */; };
+		99060FB922C27F5D006F6EA6 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 99060FB622C27F5C006F6EA6 /* Start.png */; };
+		9912D1C2229D8879008B7435 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912D1BE229D8879008B7435 /* AppManager.m */; };
+		9912D1C3229D8879008B7435 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9912D1BF229D8879008B7435 /* Constants.m */; };
+		9913162B22A2288100DC346A /* openingamenu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9913162322A2288000DC346A /* openingamenu.mp3 */; };
+		9913162C22A2288100DC346A /* filledline.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9913162422A2288100DC346A /* filledline.mp3 */; };
+		9913162D22A2288100DC346A /* bingosound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9913162522A2288100DC346A /* bingosound.mp3 */; };
+		9913162E22A2288100DC346A /* tappinganumber.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9913162622A2288100DC346A /* tappinganumber.mp3 */; };
+		9913162F22A2288100DC346A /* buttonback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9913162722A2288100DC346A /* buttonback.mp3 */; };
+		9913163022A2288100DC346A /* pausinggamesound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9913162822A2288100DC346A /* pausinggamesound.mp3 */; };
+		9913163122A2288100DC346A /* playsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9913162922A2288100DC346A /* playsound.mp3 */; };
+		9913163222A2288100DC346A /* printersound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9913162A22A2288100DC346A /* printersound.mp3 */; };
+		9913C88222D1288400923E40 /* BingoLoto_Transparent_Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 9913C88022D1288400923E40 /* BingoLoto_Transparent_Cover.png */; };
+		9913C88322D1288400923E40 /* BingoLoto_Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 9913C88122D1288400923E40 /* BingoLoto_Ball.png */; };
+		9919219122D2D00F00D7DCC0 /* Akrobat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9919218F22D2D00F00D7DCC0 /* Akrobat-Bold.otf */; };
+		9919219222D2D00F00D7DCC0 /* Akrobat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9919219022D2D00F00D7DCC0 /* Akrobat-ExtraBold.otf */; };
+		9929653822CC90D200C5941C /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9929653522CC90D100C5941C /* IAPHelper.m */; };
+		9929653922CC90D200C5941C /* RageIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9929653622CC90D100C5941C /* RageIAPHelper.m */; };
+		9941E33A22A1078C00460099 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9941E33C22A1078C00460099 /* Localizable.strings */; };
+		99744F7B22A6BFDE000A8E84 /* SplashScreenIphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 99744F7922A6BFDD000A8E84 /* SplashScreenIphone.png */; };
+		99744F7C22A6BFDE000A8E84 /* SplashScreenIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 99744F7A22A6BFDD000A8E84 /* SplashScreenIpad.png */; };
+		99E2543F22F33B420053456E /* BingoLoto_Ball_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 99E2543E22F33B420053456E /* BingoLoto_Ball_white.png */; };
+		F74AE4F62242073000B26E28 /* Variant75.png in Resources */ = {isa = PBXBuildFile; fileRef = F74AE4F32242072E00B26E28 /* Variant75.png */; };
+		F74AE4F72242073000B26E28 /* Variant90.png in Resources */ = {isa = PBXBuildFile; fileRef = F74AE4F42242072F00B26E28 /* Variant90.png */; };
+		F74AE4F82242073000B26E28 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = F74AE4F52242072F00B26E28 /* Back.png */; };
+		F75F00DF2252FCC5008D654C /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F75F00DE2252FCC4008D654C /* Logo.png */; };
+		F75F00E22252FF75008D654C /* BingoNumberLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F00E12252FF75008D654C /* BingoNumberLayer.m */; };
+		F75F00E422531873008D654C /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = F75F00E322531873008D654C /* Star.png */; };
+		F7616B87220FF75800F09617 /* GameUserInteractionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7616B86220FF75800F09617 /* GameUserInteractionLayer.m */; };
+		F7616B8A2211369500F09617 /* NumberGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7616B892211369500F09617 /* NumberGridLayer.m */; };
+		F7616BB322126E6000F09617 /* GameInteractiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7616BB222126E6000F09617 /* GameInteractiveView.m */; };
+		F7616BB622126F1800F09617 /* BingoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7616BB522126F1800F09617 /* BingoPlayViewController.m */; };
+		F76408EB223E38ED000C6006 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76408E8223E38EC000C6006 /* iTunesArtwork@2x.png */; };
+		F76408EC223E38ED000C6006 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76408E9223E38EC000C6006 /* iTunesArtwork@1x.png */; };
+		F76408ED223E38ED000C6006 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76408EA223E38EC000C6006 /* iTunesArtwork@3x.png */; };
+		F765312E2204151800451A17 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F765312D2204151800451A17 /* MainMenuViewController.m */; };
+		F765313122041EA500451A17 /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = F765313022041EA400451A17 /* UIView+Animations.m */; };
+		F768B6C0221CF3B50028F19B /* PDFDisplayAndShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F768B6BF221CF3B50028F19B /* PDFDisplayAndShareViewController.m */; };
+		F768B6C2221CFC5F0028F19B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F768B6C1221CFC5F0028F19B /* GoogleService-Info.plist */; };
+		F7763428221B8B09009ED0FA /* BingoAsPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F7763427221B8B09009ED0FA /* BingoAsPDFDocument.m */; };
+		F7916BBF21FCA36C00ADBB67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7916BBE21FCA36C00ADBB67 /* AppDelegate.m */; };
+		F7916BC221FCA36C00ADBB67 /* NumberCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7916BC121FCA36C00ADBB67 /* NumberCallViewController.m */; };
+		F7916BC521FCA36C00ADBB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7916BC321FCA36C00ADBB67 /* Main.storyboard */; };
+		F7916BC721FCA36E00ADBB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7916BC621FCA36E00ADBB67 /* Assets.xcassets */; };
+		F7916BCA21FCA36E00ADBB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7916BC821FCA36E00ADBB67 /* LaunchScreen.storyboard */; };
+		F7916BCD21FCA36E00ADBB67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7916BCC21FCA36E00ADBB67 /* main.m */; };
+		F7916BD521FCA39200ADBB67 /* NumberCallController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7916BD421FCA39200ADBB67 /* NumberCallController.m */; };
+		F7916BD821FCB01A00ADBB67 /* SpeechController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7916BD721FCB01A00ADBB67 /* SpeechController.m */; };
+		F7BF8A42223E4DD5008E06CC /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = F7BF8A41223E4DD4008E06CC /* Background.png */; };
+		F7BF8A44223E4F83008E06CC /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F7BF8A43223E4F83008E06CC /* Settings.png */; };
+		F7BF8A48223E538E008E06CC /* Call.png in Resources */ = {isa = PBXBuildFile; fileRef = F7BF8A45223E538D008E06CC /* Call.png */; };
+		F7BF8A49223E538E008E06CC /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = F7BF8A46223E538E008E06CC /* Play.png */; };
+		F7BF8A4A223E538E008E06CC /* Print.png in Resources */ = {isa = PBXBuildFile; fileRef = F7BF8A47223E538E008E06CC /* Print.png */; };
+		F7D3C64B221D3138003CFCE0 /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D3C64A221D3138003CFCE0 /* OptionsTableViewController.m */; };
+		F7D3C6E3221D3608003CFCE0 /* SoundSpeed.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D3C6E2221D3607003CFCE0 /* SoundSpeed.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F776348F221BEEF0009ED0FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05F481D60D0EF838D30DB87C /* libPods-BingoLoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BingoLoto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99060FB422C27F5C006F6EA6 /* Continue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Continue.png; sourceTree = "<group>"; };
+		99060FB522C27F5C006F6EA6 /* Exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exit.png; sourceTree = "<group>"; };
+		99060FB622C27F5C006F6EA6 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
+		9912D1BC229D8879008B7435 /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		9912D1BD229D8879008B7435 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9912D1BE229D8879008B7435 /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		9912D1BF229D8879008B7435 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		9913162322A2288000DC346A /* openingamenu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = openingamenu.mp3; sourceTree = "<group>"; };
+		9913162422A2288100DC346A /* filledline.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = filledline.mp3; sourceTree = "<group>"; };
+		9913162522A2288100DC346A /* bingosound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bingosound.mp3; sourceTree = "<group>"; };
+		9913162622A2288100DC346A /* tappinganumber.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tappinganumber.mp3; sourceTree = "<group>"; };
+		9913162722A2288100DC346A /* buttonback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonback.mp3; sourceTree = "<group>"; };
+		9913162822A2288100DC346A /* pausinggamesound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pausinggamesound.mp3; sourceTree = "<group>"; };
+		9913162922A2288100DC346A /* playsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = playsound.mp3; sourceTree = "<group>"; };
+		9913162A22A2288100DC346A /* printersound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = printersound.mp3; sourceTree = "<group>"; };
+		9913C88022D1288400923E40 /* BingoLoto_Transparent_Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BingoLoto_Transparent_Cover.png; sourceTree = "<group>"; };
+		9913C88122D1288400923E40 /* BingoLoto_Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BingoLoto_Ball.png; sourceTree = "<group>"; };
+		9919218F22D2D00F00D7DCC0 /* Akrobat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akrobat-Bold.otf"; sourceTree = "<group>"; };
+		9919219022D2D00F00D7DCC0 /* Akrobat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akrobat-ExtraBold.otf"; sourceTree = "<group>"; };
+		9929653422CC90D100C5941C /* RageIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RageIAPHelper.h; sourceTree = "<group>"; };
+		9929653522CC90D100C5941C /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		9929653622CC90D100C5941C /* RageIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RageIAPHelper.m; sourceTree = "<group>"; };
+		9929653722CC90D100C5941C /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		9941E33B22A1078C00460099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9941E33D22A1078E00460099 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9941E34022A107A800460099 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		99744F7922A6BFDD000A8E84 /* SplashScreenIphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreenIphone.png; sourceTree = "<group>"; };
+		99744F7A22A6BFDD000A8E84 /* SplashScreenIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreenIpad.png; sourceTree = "<group>"; };
+		99E2543E22F33B420053456E /* BingoLoto_Ball_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BingoLoto_Ball_white.png; sourceTree = "<group>"; };
+		9DA48D1CF669EB90171FC99C /* Pods-BingoLoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingoLoto.release.xcconfig"; path = "Target Support Files/Pods-BingoLoto/Pods-BingoLoto.release.xcconfig"; sourceTree = "<group>"; };
+		C129F60F04DC2648652C1D40 /* Pods-BingoLoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingoLoto.debug.xcconfig"; path = "Target Support Files/Pods-BingoLoto/Pods-BingoLoto.debug.xcconfig"; sourceTree = "<group>"; };
+		F74AE4F32242072E00B26E28 /* Variant75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Variant75.png; sourceTree = "<group>"; };
+		F74AE4F42242072F00B26E28 /* Variant90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Variant90.png; sourceTree = "<group>"; };
+		F74AE4F52242072F00B26E28 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
+		F75F00DE2252FCC4008D654C /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		F75F00E02252FF75008D654C /* BingoNumberLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BingoNumberLayer.h; sourceTree = "<group>"; };
+		F75F00E12252FF75008D654C /* BingoNumberLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BingoNumberLayer.m; sourceTree = "<group>"; };
+		F75F00E322531873008D654C /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		F7616B85220FF75800F09617 /* GameUserInteractionLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameUserInteractionLayer.h; sourceTree = "<group>"; };
+		F7616B86220FF75800F09617 /* GameUserInteractionLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameUserInteractionLayer.m; sourceTree = "<group>"; };
+		F7616B882211369500F09617 /* NumberGridLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberGridLayer.h; sourceTree = "<group>"; };
+		F7616B892211369500F09617 /* NumberGridLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberGridLayer.m; sourceTree = "<group>"; };
+		F7616BB122126E6000F09617 /* GameInteractiveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameInteractiveView.h; sourceTree = "<group>"; };
+		F7616BB222126E6000F09617 /* GameInteractiveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameInteractiveView.m; sourceTree = "<group>"; };
+		F7616BB422126F1800F09617 /* BingoPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BingoPlayViewController.h; sourceTree = "<group>"; };
+		F7616BB522126F1800F09617 /* BingoPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BingoPlayViewController.m; sourceTree = "<group>"; };
+		F7616BB72212713E00F09617 /* BingoDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BingoDefinitions.h; sourceTree = "<group>"; };
+		F76408E8223E38EC000C6006 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		F76408E9223E38EC000C6006 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		F76408EA223E38EC000C6006 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		F765312C2204151800451A17 /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		F765312D2204151800451A17 /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		F765312F22041EA400451A17 /* UIView+Animations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animations.h"; sourceTree = "<group>"; };
+		F765313022041EA400451A17 /* UIView+Animations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animations.m"; sourceTree = "<group>"; };
+		F768B6BE221CF3B50028F19B /* PDFDisplayAndShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFDisplayAndShareViewController.h; sourceTree = "<group>"; };
+		F768B6BF221CF3B50028F19B /* PDFDisplayAndShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFDisplayAndShareViewController.m; sourceTree = "<group>"; };
+		F768B6C1221CFC5F0028F19B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F7763426221B8B09009ED0FA /* BingoAsPDFDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BingoAsPDFDocument.h; sourceTree = "<group>"; };
+		F7763427221B8B09009ED0FA /* BingoAsPDFDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BingoAsPDFDocument.m; sourceTree = "<group>"; };
+		F7916BBA21FCA36C00ADBB67 /* BingoLoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingoLoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7916BBD21FCA36C00ADBB67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F7916BBE21FCA36C00ADBB67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7916BC021FCA36C00ADBB67 /* NumberCallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberCallViewController.h; sourceTree = "<group>"; };
+		F7916BC121FCA36C00ADBB67 /* NumberCallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberCallViewController.m; sourceTree = "<group>"; };
+		F7916BC421FCA36C00ADBB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7916BC621FCA36E00ADBB67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7916BC921FCA36E00ADBB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7916BCB21FCA36E00ADBB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7916BCC21FCA36E00ADBB67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7916BD321FCA39200ADBB67 /* NumberCallController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberCallController.h; sourceTree = "<group>"; };
+		F7916BD421FCA39200ADBB67 /* NumberCallController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberCallController.m; sourceTree = "<group>"; };
+		F7916BD621FCB01A00ADBB67 /* SpeechController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechController.h; sourceTree = "<group>"; };
+		F7916BD721FCB01A00ADBB67 /* SpeechController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechController.m; sourceTree = "<group>"; };
+		F7BF8A41223E4DD4008E06CC /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		F7BF8A43223E4F83008E06CC /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
+		F7BF8A45223E538D008E06CC /* Call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Call.png; sourceTree = "<group>"; };
+		F7BF8A46223E538E008E06CC /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		F7BF8A47223E538E008E06CC /* Print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Print.png; sourceTree = "<group>"; };
+		F7D3C649221D3138003CFCE0 /* OptionsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionsTableViewController.h; sourceTree = "<group>"; };
+		F7D3C64A221D3138003CFCE0 /* OptionsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsTableViewController.m; sourceTree = "<group>"; };
+		F7D3C6E2221D3607003CFCE0 /* SoundSpeed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundSpeed.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7916BB721FCA36C00ADBB67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EDA48A3A1632CB7EB5A775 /* libPods-BingoLoto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F7D6B16DEB9747F2D5C2D6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05F481D60D0EF838D30DB87C /* libPods-BingoLoto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9912D1BA229D8879008B7435 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9912D1BC229D8879008B7435 /* AppManager.h */,
+				9912D1BE229D8879008B7435 /* AppManager.m */,
+				9912D1BD229D8879008B7435 /* Constants.h */,
+				9912D1BF229D8879008B7435 /* Constants.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9912D1C4229D8884008B7435 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9913162522A2288100DC346A /* bingosound.mp3 */,
+				9913162722A2288100DC346A /* buttonback.mp3 */,
+				9913162422A2288100DC346A /* filledline.mp3 */,
+				9913162322A2288000DC346A /* openingamenu.mp3 */,
+				9913162822A2288100DC346A /* pausinggamesound.mp3 */,
+				9913162922A2288100DC346A /* playsound.mp3 */,
+				9913162A22A2288100DC346A /* printersound.mp3 */,
+				9913162622A2288100DC346A /* tappinganumber.mp3 */,
+			);
+			name = sounds;
+			path = BingoLoto/sounds;
+			sourceTree = SOURCE_ROOT;
+		};
+		9919218D22D2D00F00D7DCC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9919218E22D2D00F00D7DCC0 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9919218E22D2D00F00D7DCC0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9919218F22D2D00F00D7DCC0 /* Akrobat-Bold.otf */,
+				9919219022D2D00F00D7DCC0 /* Akrobat-ExtraBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9929653322CC90D100C5941C /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				9929653422CC90D100C5941C /* RageIAPHelper.h */,
+				9929653522CC90D100C5941C /* IAPHelper.m */,
+				9929653622CC90D100C5941C /* RageIAPHelper.m */,
+				9929653722CC90D100C5941C /* IAPHelper.h */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		C7E652A4C1DC237A744C05AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C129F60F04DC2648652C1D40 /* Pods-BingoLoto.debug.xcconfig */,
+				9DA48D1CF669EB90171FC99C /* Pods-BingoLoto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7916BB121FCA36C00ADBB67 = {
+			isa = PBXGroup;
+			children = (
+				F7916BBC21FCA36C00ADBB67 /* BingoLoto */,
+				F7916BBB21FCA36C00ADBB67 /* Products */,
+				C7E652A4C1DC237A744C05AA /* Pods */,
+				2F7D6B16DEB9747F2D5C2D6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7916BBB21FCA36C00ADBB67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7916BBA21FCA36C00ADBB67 /* BingoLoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7916BBC21FCA36C00ADBB67 /* BingoLoto */ = {
+			isa = PBXGroup;
+			children = (
+				9929653322CC90D100C5941C /* IAP */,
+				9912D1BA229D8879008B7435 /* Common */,
+				9912D1C4229D8884008B7435 /* sounds */,
+				F768B6C1221CFC5F0028F19B /* GoogleService-Info.plist */,
+				9941E33C22A1078C00460099 /* Localizable.strings */,
+				F7D3C649221D3138003CFCE0 /* OptionsTableViewController.h */,
+				F7D3C64A221D3138003CFCE0 /* OptionsTableViewController.m */,
+				F765312C2204151800451A17 /* MainMenuViewController.h */,
+				F765312D2204151800451A17 /* MainMenuViewController.m */,
+				F7916BBD21FCA36C00ADBB67 /* AppDelegate.h */,
+				F7916BBE21FCA36C00ADBB67 /* AppDelegate.m */,
+				F7616B882211369500F09617 /* NumberGridLayer.h */,
+				F7616B892211369500F09617 /* NumberGridLayer.m */,
+				F75F00E12252FF75008D654C /* BingoNumberLayer.m */,
+				F7916BC121FCA36C00ADBB67 /* NumberCallViewController.m */,
+				F7616B86220FF75800F09617 /* GameUserInteractionLayer.m */,
+				99060FB422C27F5C006F6EA6 /* Continue.png */,
+				99060FB522C27F5C006F6EA6 /* Exit.png */,
+				99060FB622C27F5C006F6EA6 /* Start.png */,
+				F765312F22041EA400451A17 /* UIView+Animations.h */,
+				F765313022041EA400451A17 /* UIView+Animations.m */,
+				F7916BD621FCB01A00ADBB67 /* SpeechController.h */,
+				F7916BD721FCB01A00ADBB67 /* SpeechController.m */,
+				F75F00E02252FF75008D654C /* BingoNumberLayer.h */,
+				F7916BD321FCA39200ADBB67 /* NumberCallController.h */,
+				F7916BD421FCA39200ADBB67 /* NumberCallController.m */,
+				F7616BB72212713E00F09617 /* BingoDefinitions.h */,
+				F7916BC021FCA36C00ADBB67 /* NumberCallViewController.h */,
+				F7616BB422126F1800F09617 /* BingoPlayViewController.h */,
+				F7616BB522126F1800F09617 /* BingoPlayViewController.m */,
+				F7616BB122126E6000F09617 /* GameInteractiveView.h */,
+				F7616BB222126E6000F09617 /* GameInteractiveView.m */,
+				F7616B85220FF75800F09617 /* GameUserInteractionLayer.h */,
+				F768B6BE221CF3B50028F19B /* PDFDisplayAndShareViewController.h */,
+				F768B6BF221CF3B50028F19B /* PDFDisplayAndShareViewController.m */,
+				F7916BC321FCA36C00ADBB67 /* Main.storyboard */,
+				F76408E9223E38EC000C6006 /* iTunesArtwork@1x.png */,
+				F76408E8223E38EC000C6006 /* iTunesArtwork@2x.png */,
+				F76408EA223E38EC000C6006 /* iTunesArtwork@3x.png */,
+				F7916BC621FCA36E00ADBB67 /* Assets.xcassets */,
+				F7916BC821FCA36E00ADBB67 /* LaunchScreen.storyboard */,
+				9913C88122D1288400923E40 /* BingoLoto_Ball.png */,
+				99E2543E22F33B420053456E /* BingoLoto_Ball_white.png */,
+				9913C88022D1288400923E40 /* BingoLoto_Transparent_Cover.png */,
+				F75F00E322531873008D654C /* Star.png */,
+				F75F00DE2252FCC4008D654C /* Logo.png */,
+				F7BF8A45223E538D008E06CC /* Call.png */,
+				F7BF8A46223E538E008E06CC /* Play.png */,
+				F7BF8A47223E538E008E06CC /* Print.png */,
+				F74AE4F52242072F00B26E28 /* Back.png */,
+				F74AE4F32242072E00B26E28 /* Variant75.png */,
+				F74AE4F42242072F00B26E28 /* Variant90.png */,
+				F7BF8A41223E4DD4008E06CC /* Background.png */,
+				F7BF8A43223E4F83008E06CC /* Settings.png */,
+				99744F7A22A6BFDD000A8E84 /* SplashScreenIpad.png */,
+				99744F7922A6BFDD000A8E84 /* SplashScreenIphone.png */,
+				F7916BCB21FCA36E00ADBB67 /* Info.plist */,
+				F7916BCC21FCA36E00ADBB67 /* main.m */,
+				F7763426221B8B09009ED0FA /* BingoAsPDFDocument.h */,
+				F7D3C6E2221D3607003CFCE0 /* SoundSpeed.xib */,
+				F7763427221B8B09009ED0FA /* BingoAsPDFDocument.m */,
+				9919218D22D2D00F00D7DCC0 /* Resources */,
+			);
+			path = BingoLoto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7916BB921FCA36C00ADBB67 /* BingoLoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7916BD021FCA36E00ADBB67 /* Build configuration list for PBXNativeTarget "BingoLoto" */;
+			buildPhases = (
+				60B0F384B42AB9382E7D6CA8 /* [CP] Check Pods Manifest.lock */,
+				F7916BB621FCA36C00ADBB67 /* Sources */,
+				F7916BB721FCA36C00ADBB67 /* Frameworks */,
+				F7916BB821FCA36C00ADBB67 /* Resources */,
+				F776348F221BEEF0009ED0FA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BingoLoto;
+			productName = BingoLoto;
+			productReference = F7916BBA21FCA36C00ADBB67 /* BingoLoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7916BB221FCA36C00ADBB67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Sensetrails Sarl";
+				TargetAttributes = {
+					F7916BB921FCA36C00ADBB67 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = F7916BB521FCA36C00ADBB67 /* Build configuration list for PBXProject "BingoLoto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				de,
+			);
+			mainGroup = F7916BB121FCA36C00ADBB67;
+			productRefGroup = F7916BBB21FCA36C00ADBB67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7916BB921FCA36C00ADBB67 /* BingoLoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7916BB821FCA36C00ADBB67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913162C22A2288100DC346A /* filledline.mp3 in Resources */,
+				F7D3C6E3221D3608003CFCE0 /* SoundSpeed.xib in Resources */,
+				F7BF8A4A223E538E008E06CC /* Print.png in Resources */,
+				F75F00DF2252FCC5008D654C /* Logo.png in Resources */,
+				9913162D22A2288100DC346A /* bingosound.mp3 in Resources */,
+				99E2543F22F33B420053456E /* BingoLoto_Ball_white.png in Resources */,
+				F7BF8A42223E4DD5008E06CC /* Background.png in Resources */,
+				9913C88222D1288400923E40 /* BingoLoto_Transparent_Cover.png in Resources */,
+				F7916BCA21FCA36E00ADBB67 /* LaunchScreen.storyboard in Resources */,
+				9913162E22A2288100DC346A /* tappinganumber.mp3 in Resources */,
+				F75F00E422531873008D654C /* Star.png in Resources */,
+				F7BF8A44223E4F83008E06CC /* Settings.png in Resources */,
+				99060FB922C27F5D006F6EA6 /* Start.png in Resources */,
+				99744F7C22A6BFDE000A8E84 /* SplashScreenIpad.png in Resources */,
+				F7BF8A49223E538E008E06CC /* Play.png in Resources */,
+				9919219222D2D00F00D7DCC0 /* Akrobat-ExtraBold.otf in Resources */,
+				F7BF8A48223E538E008E06CC /* Call.png in Resources */,
+				9913163222A2288100DC346A /* printersound.mp3 in Resources */,
+				F76408EB223E38ED000C6006 /* iTunesArtwork@2x.png in Resources */,
+				9941E33A22A1078C00460099 /* Localizable.strings in Resources */,
+				F76408ED223E38ED000C6006 /* iTunesArtwork@3x.png in Resources */,
+				F768B6C2221CFC5F0028F19B /* GoogleService-Info.plist in Resources */,
+				F76408EC223E38ED000C6006 /* iTunesArtwork@1x.png in Resources */,
+				99060FB822C27F5D006F6EA6 /* Exit.png in Resources */,
+				9913163122A2288100DC346A /* playsound.mp3 in Resources */,
+				99744F7B22A6BFDE000A8E84 /* SplashScreenIphone.png in Resources */,
+				F74AE4F62242073000B26E28 /* Variant75.png in Resources */,
+				99060FB722C27F5D006F6EA6 /* Continue.png in Resources */,
+				9913162F22A2288100DC346A /* buttonback.mp3 in Resources */,
+				9913162B22A2288100DC346A /* openingamenu.mp3 in Resources */,
+				F74AE4F82242073000B26E28 /* Back.png in Resources */,
+				9913163022A2288100DC346A /* pausinggamesound.mp3 in Resources */,
+				9919219122D2D00F00D7DCC0 /* Akrobat-Bold.otf in Resources */,
+				F7916BC721FCA36E00ADBB67 /* Assets.xcassets in Resources */,
+				F7916BC521FCA36C00ADBB67 /* Main.storyboard in Resources */,
+				9913C88322D1288400923E40 /* BingoLoto_Ball.png in Resources */,
+				F74AE4F72242073000B26E28 /* Variant90.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60B0F384B42AB9382E7D6CA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BingoLoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7916BB621FCA36C00ADBB67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7916BC221FCA36C00ADBB67 /* NumberCallViewController.m in Sources */,
+				F7916BCD21FCA36E00ADBB67 /* main.m in Sources */,
+				F7916BD821FCB01A00ADBB67 /* SpeechController.m in Sources */,
+				9929653922CC90D200C5941C /* RageIAPHelper.m in Sources */,
+				F75F00E22252FF75008D654C /* BingoNumberLayer.m in Sources */,
+				F7616B87220FF75800F09617 /* GameUserInteractionLayer.m in Sources */,
+				F7616BB622126F1800F09617 /* BingoPlayViewController.m in Sources */,
+				F7916BD521FCA39200ADBB67 /* NumberCallController.m in Sources */,
+				F765313122041EA500451A17 /* UIView+Animations.m in Sources */,
+				F768B6C0221CF3B50028F19B /* PDFDisplayAndShareViewController.m in Sources */,
+				F765312E2204151800451A17 /* MainMenuViewController.m in Sources */,
+				F7916BBF21FCA36C00ADBB67 /* AppDelegate.m in Sources */,
+				F7D3C64B221D3138003CFCE0 /* OptionsTableViewController.m in Sources */,
+				F7616B8A2211369500F09617 /* NumberGridLayer.m in Sources */,
+				F7616BB322126E6000F09617 /* GameInteractiveView.m in Sources */,
+				9912D1C2229D8879008B7435 /* AppManager.m in Sources */,
+				F7763428221B8B09009ED0FA /* BingoAsPDFDocument.m in Sources */,
+				9929653822CC90D200C5941C /* IAPHelper.m in Sources */,
+				9912D1C3229D8879008B7435 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9941E33C22A1078C00460099 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9941E33B22A1078C00460099 /* en */,
+				9941E33D22A1078E00460099 /* fr */,
+				9941E34022A107A800460099 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F7916BC321FCA36C00ADBB67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7916BC421FCA36C00ADBB67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7916BC821FCA36E00ADBB67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7916BC921FCA36E00ADBB67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7916BCE21FCA36E00ADBB67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F7916BCF21FCA36E00ADBB67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7916BD121FCA36E00ADBB67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C129F60F04DC2648652C1D40 /* Pods-BingoLoto.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5H8R3L922Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BingoLoto",
+				);
+				INFOPLIST_FILE = BingoLoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sensetrails.bingoloto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BingoLoto/Common/BingoLoto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7916BD221FCA36E00ADBB67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA48D1CF669EB90171FC99C /* Pods-BingoLoto.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5H8R3L922Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BingoLoto",
+				);
+				INFOPLIST_FILE = BingoLoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sensetrails.bingoloto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BingoLoto/Common/BingoLoto-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7916BB521FCA36C00ADBB67 /* Build configuration list for PBXProject "BingoLoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7916BCE21FCA36E00ADBB67 /* Debug */,
+				F7916BCF21FCA36E00ADBB67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7916BD021FCA36E00ADBB67 /* Build configuration list for PBXNativeTarget "BingoLoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7916BD121FCA36E00ADBB67 /* Debug */,
+				F7916BD221FCA36E00ADBB67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7916BB221FCA36C00ADBB67 /* Project object */;
+}

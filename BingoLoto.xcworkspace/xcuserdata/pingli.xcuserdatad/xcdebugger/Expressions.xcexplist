@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[NumberGridLayer touchedLayer:]:NumberGridLayer.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[NumberGridLayer checkLinesAndReturnNewComplete]:NumberGridLayer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[aNumber integerValue]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "IAPHandler.paymentQueue(_:updatedTransactions:):IAPHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "transaction.payment.productIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "IAPHandler.productsRequest(_:didReceive:):IAPHandler.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[NumberGridLayer checkCompleteLineWithNumberAtColumn:row:]:NumberGridLayer.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

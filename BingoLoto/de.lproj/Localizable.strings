@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  BingoLoto
+
+  Created by Johann Huguenin on 20.02.19.
+  Copyright © 2019 Sensetrails Sarl. All rights reserved.
+*/
+
+"Share grids" = "Raster teilen";
+"Generated Grids" = "Generierte Gitter";
+"TapToPause" = "Tippen Sie auf eine beliebige Stelle auf dem Bildschirm, um die Wiedergabe anzuhalten";
+
+"Sounds" = "Geräusche";
+"PageSize" = "SeiteGröße für exportierte Raster";
+"Language" = "Sprache";
+"Restore Purchase"="Kauf wiederherstellen";
+"Restore Premium Version"="Premium-Version wiederherstellen";
+
+"Choose a game variant" = "Wähle eine Spielvariante";
+"Upgrade to premium version"="Upgrade auf Premium-Version";
+"Upgrade to premium version to get all numbers"="Aktualisieren Sie auf die Premium-Version, um alle Nummern zu erhalten";
